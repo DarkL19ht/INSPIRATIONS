@@ -1,0 +1,93 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 750px;
+    width: 100%;
+    
+
+    background: linear-gradient(180deg, black, white);
+    background-repeat: no-repeat;
+}
+
+.container{
+   
+    height: 80%;
+    width: 70%;
+    margin-top: 2.8%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border: none;
+   
+    
+}
+
+.left{
+   background-image: url(./caricature-5265157_1920.jpg);
+   background-repeat: none;
+   object-fit: cover;
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+   width: 50%;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.right{
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+}
+
+.theForm{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(255, 246, 236);
+    margin-left: 0%;
+    /* padding-top: 10%; */
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header{
+   margin-left: 15%;
+   padding-top: 10%;
+   font-weight: 700;
+   margin-top: 0%;
+}
+
+
+input{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 67.5%;
+    height: 30px;
+    border: none;
+    border-bottom: solid 0.05px !important;
+    background-color: rgb(255, 246, 236);
+   
+}
+
+.formItem1 input{
+    margin-top: 7% !important;
+}
+
+button{
+    margin-top: 7%;
+    margin-left: 15%;
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: cyan;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+}
+
+
