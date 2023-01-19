@@ -1,0 +1,119 @@
+$finalHeight: 250px;
+$finalWidth: 3 * $finalHeight;
+$scrollBarHeight: 1px;
+
+::-webkit-scrollbar {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+// body {
+//   background: #111;
+// }
+
+// div {
+//   box-sizing: border-box;
+// }
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: calc(#{$finalHeight} + #{$scrollBarHeight});
+  max-height: $finalWidth;
+  margin: 0;
+  padding-top: $scrollBarHeight;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-$finalHeight);
+  transform-origin: right top;
+  & > div {
+    display: block;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
+}
+
+.squares {
+  padding: $finalHeight 0 0 0;
+  & > div {
+    width: $finalHeight;
+    height: $finalHeight;
+    margin: 10px 0;
+  }
+}
+
+
+
+//percent
+// $orange:  #EF4E31;
+// $lightgrey:  #ccc;
+// $white:  #fff;
+// $charcoal: #333;
+// $ease: background .15s ease;
+
+// %align-both {
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%)
+// }
+
+// body {
+//   height: 7000px;
+//   font-family: sans-serif;
+//   color: $charcoal;
+// }
+
+// .percent {
+//   position: relative;
+//   background: $lightgrey;
+//   border-radius: 30px;
+//   overflow: hidden;
+//   height: 300px;
+//   width: 50px;
+//   position: fixed;
+//   @extend %align-both;
+// }
+
+// .fill {
+//    width: 100%;
+//    height: 100%;
+//    background: $orange;
+//    position: absolute;
+//    bottom: 0;
+//    transition: $ease;
+// }
+
+// h1 {
+//   position: absolute;
+//   font-size: 18px;
+//   text-align: center;
+//   line-height: 1;
+//   @extend %align-both;
+// }
+
+// // .progress {
+// //   position: fixed;
+// //   bottom: 0;
+// //   left: 0;
+// //   width: 100%;
+// //   height: 20px;
+// //   background: white;
+// //   z-index: 1;
+
+// //   .bar {
+// //     height: 100%;
+// //     width: 10%;
+// //     background: $orange;
+// //     transition: $ease;
+// //   }
+// // }
